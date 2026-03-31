@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f61e1e17-e969-427c-9d64-c4ce450045db" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.14/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application-example.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application-example.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file-crypto-service.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/cli/CommandLineArguments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/cli/CommandLineParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/config/ActionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/config/AppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/config/ConfigLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/config/RunMode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/core/DirectoryDaemon$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/core/DirectoryDaemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/core/ProcessingCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/core/SingleRunProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/fs/FileCollector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/fs/FileReservationService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/fs/FileReservationService$Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/fs/FileReservationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/fs/OutputPathResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/service/CryptoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/com/example/filecrypto/service/NoOpCryptoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/run-example.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sources.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/cli/CommandLineArguments.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/cli/CommandLineParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/config/ActionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/config/AppConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/config/ConfigLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/config/RunMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/core/DirectoryDaemon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/core/ProcessingCoordinator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/core/SingleRunProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/fs/FileCollector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/fs/FileReservationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/fs/OutputPathResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/service/CryptoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/filecrypto/service/NoOpCryptoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "KonstantinBezzubikov"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/KonstantinBezzubikov/file-crypto-service.git",
+    "accountId": "749aaf54-b244-4ffb-ad7c-742d26a28577"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="3BhaKYer8leYFEDWFwqIDsoLwfi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/m/CommonProjects/java-file-crypto-service",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f61e1e17-e969-427c-9d64-c4ce450045db" name="Changes" comment="" />
+      <created>1774943693621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774943693621</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

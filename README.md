@@ -1,4 +1,4 @@
-# file-crypto-service
+# gpb-file-crypto-service
 
 Консольный сервис на Java 8 + Gradle без Spring Boot для пакетной шифровки/расшифровки файлов.
 
@@ -8,6 +8,8 @@
 - поддерживает daemon-режим,
 - резервирует файлы через суффикс `.in_progress`,
 - создает выходные файлы с дефолтными именами,
+- удаляет успешно обработанные исходники при обработке папки и в daemon-режиме,
+- пропускает файлы `.enc`, `.dec`, `.in_progress`,
 - готов к замене на реальную криптографию.
 
 ## Возможности
@@ -21,8 +23,8 @@
 - работа с одним файлом
 - работа с папкой
 - дефолтные выходные имена:
-    - шифрование: `<имя>.enc`
-    - расшифровка: `<имя>.dec`
+  - шифрование: `<имя>.enc`
+  - расшифровка: `<имя>.dec`
 - daemon-режим со сканированием папки
 - безопасная параллельная обработка за счет временного переименования входного файла в `*.in_progress`
 
@@ -30,10 +32,8 @@
 
 ### Один файл
 
-Пример:
-
 ```bash
-java -jar build/libs/file-crypto-service-1.0.0.jar -action encrypt -in /data/test.txt
+java -jar build/libs/gpb-file-crypto-service-1.0.0.jar -action encrypt -in /data/test.txt
 ```
 
 Результат:
@@ -43,44 +43,28 @@ java -jar build/libs/file-crypto-service-1.0.0.jar -action encrypt -in /data/tes
 
 ### Папка
 
-Пример:
-
 ```bash
-java -jar build/libs/file-crypto-service-1.0.0.jar -action decrypt -in /data/inbox -out /data/outbox
+java -jar build/libs/gpb-file-crypto-service-1.0.0.jar -action encrypt -in /data/inbox -out /data/outbox
 ```
 
 Результат:
-- все файлы из `/data/inbox` будут обработаны
+- все подходящие файлы из `/data/inbox` будут обработаны
+- файлы `.enc`, `.dec`, `.in_progress` будут пропущены
 - результирующие файлы попадут в `/data/outbox`
+- успешно обработанные исходные файлы будут удалены
 - если включена рекурсия, структура подпапок будет сохранена
 
 ### Daemon
 
-Пример:
-
 ```bash
-java -jar build/libs/file-crypto-service-1.0.0.jar -action encrypt -mode daemon -in /data/inbox -out /data/outbox
+java -jar build/libs/gpb-file-crypto-service-1.0.0.jar -action encrypt -mode daemon -in /data/inbox -out /data/outbox
 ```
 
-Сервис будет циклически сканировать входную папку.
+Сервис будет циклически сканировать входную папку и удалять успешно обработанные исходники.
 
 ## Конфигурация
 
 Базовый конфиг: `src/main/resources/application.properties`
-
-Пример внешнего конфига:
-
-```properties
-app.action=encrypt
-app.mode=daemon
-app.in=/opt/data/inbox
-app.out=/opt/data/outbox
-app.scanIntervalMs=5000
-app.recursive=true
-app.includeHidden=false
-app.shutdownWaitMs=3000
-app.inProgressSuffix=.in_progress
-```
 
 CLI-аргументы имеют приоритет над конфигом.
 
@@ -90,13 +74,16 @@ CLI-аргументы имеют приоритет над конфигом.
 gradle clean build
 ```
 
-или через wrapper, если вы его добавите в свой контур.
+## Скрипты запуска
 
-## Запуск
-
-```bash
-java -jar build/libs/file-crypto-service-1.0.0.jar -action encrypt -mode default -in /tmp/a.txt
-```
+Каталог `scripts/` содержит готовые `.sh`-скрипты с комментариями для основных сценариев:
+- `run-single-encrypt-default.sh`
+- `run-single-decrypt-default.sh`
+- `run-directory-encrypt-default.sh`
+- `run-directory-decrypt-default.sh`
+- `run-daemon-encrypt.sh`
+- `run-daemon-decrypt.sh`
+- `stop-daemon.sh`
 
 ## Архитектура
 
@@ -111,7 +98,3 @@ java -jar build/libs/file-crypto-service-1.0.0.jar -action encrypt -mode default
 - `OutputPathResolver` — расчет результирующих путей
 - `CryptoService` — контракт криптомодуля
 - `NoOpCryptoService` — временная заглушка вместо реального шифрования
-
-## Следующий этап
-
-Чтобы встроить реальное шифрование, достаточно заменить `NoOpCryptoService` на боевую реализацию `CryptoService`.

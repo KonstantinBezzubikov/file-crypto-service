@@ -2,29 +2,33 @@ plugins {
     id 'java'
     id 'application'
 }
-
 group = 'com.example'
 version = '1.0.0'
-
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
-
 repositories {
-    mavenCentral()
+    if (project.hasProperty("nexusUrl")) {
+        maven {
+            url "${nexusUrl}"
+            credentials {
+                username "${nexusUser}"
+                password "${nexusPassword}"
+            }
+        }
+    }
 }
-
+//repositories {
+//    mavenCentral()
+//}
 dependencies {
     testImplementation 'junit:junit:4.13.2'
 }
-
 application {
     mainClassName = 'com.example.filecrypto.Application'
 }
-
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
-
 jar {
     manifest {
         attributes(
